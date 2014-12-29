@@ -1,10 +1,5 @@
 {
-  "name": "kampot",
+  "name": "Peeking ghost",
   "version": "0.1.0",
-  "author": "Colin Meinke <hello@colinmeinke.com>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/colinmeinke/kampot"
-  },
-  "license": "MIT"
+  "author": "Colin Meinke <hello@colinmeinke.com>"
 }
