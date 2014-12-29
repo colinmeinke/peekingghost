@@ -1,0 +1,10 @@
+{
+  "name": "kampot",
+  "version": "0.1.0",
+  "author": "Colin Meinke <hello@colinmeinke.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/colinmeinke/kampot"
+  },
+  "license": "MIT"
+}

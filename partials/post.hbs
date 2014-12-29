@@ -1,0 +1,82 @@
+<article class="{{^is "post"}}
+                post-list__item
+                {{/is}}
+                post"
+         {{#is "post"}}
+         role="main"
+         data-id="{{id}}"
+         {{/is}}
+         itemprop="blogPost"
+         itemscope
+         itemtype="http://schema.org/BlogPosting">
+
+  <header class="post__header">
+
+    <h2 class="post__header__title"
+        itemprop="name">
+      {{^is "post"}}
+      <a href="{{url absolute="true"}}"
+         class="post__header__title__link"
+         itemprop="url">
+      {{/is}}
+      {{title}}
+      {{^is "post"}}
+      </a>
+      {{/is}}
+    </h2>
+
+    <time datetime="{{date format='YYYY-MM-DD'}}"
+          class="post__header__date"
+          itemprop="datePublished">
+      {{date format="dddd Do MMM  YYYY"}}
+    </time>
+
+    {{> tags}}
+
+    {{#contentFor "tags_class"}}
+    post__header__tags
+    {{/contentFor}}
+    
+  </header>
+
+  <div class="post__content"
+       itemprop="articleBody">
+
+    {{#is "post"}}
+
+    {{content}}
+
+    <p>
+      &mdash;
+      <span itemprop="author">
+        {{author.name}}
+      </span>
+    </p>
+
+    {{else}}
+
+    {{#if image}}
+    <a href="{{url absolute="true"}}"
+       class="post__header__title__link">
+      <img src="{{image absolute="true"}}"
+           class="post__content__cover-image"
+           itemprop="image" />
+    </a>
+    {{/if}}
+
+    <p class="post__content__excerpt">
+      {{excerpt}}&hellip;
+      <a href="{{url absolute="true"}}"
+         class="post__content__excerpt__read-more">
+        Read more
+        <span class="post__content__read-more__context">
+          of "{{title}}"
+        </span>
+      </a>
+    </p>
+
+  {{/is}}
+
+  </div>
+
+</article>

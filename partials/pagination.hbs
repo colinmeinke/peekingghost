@@ -1,0 +1,19 @@
+<nav class="pagination" role="pagination"><!--
+
+  {{#if prev}}
+  --><a href="{{page_url prev}}"
+     class="pagination__button
+            pagination__button--previous">
+    Newer posts
+  </a><!--
+  {{/if}}
+
+  {{#if next}}
+  --><a href="{{page_url next}}"
+     class="pagination__button
+            pagination__button--next">
+    Older posts
+  </a><!--
+  {{/if}}
+
+--></nav>
