@@ -107,13 +107,13 @@ hr {
   height: 2.353rem;
   border-radius: 1.177rem;
   display: block;
-  border: 0.059rem solid hsla( 155, 15%, 60%, 1 );
+  border: 0.059rem solid hsla( 155, 35%, 60%, 1 );
   transition: all 0.3s ease;
 }
 
 .header__branding:hover .header__branding__logo,
 .header__branding:focus .header__branding__logo {
-  border-color: hsla( 155, 25%, 45%, 1 );
+  border-color: hsla( 155, 45%, 45%, 1 );
 }
 
 .header__branding__title {
