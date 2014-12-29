@@ -8,7 +8,7 @@
   w.kampot.env = ( w.location.hostname === 'localhost' ) ?
     'development' : 'production';
 
-  w.kampot.disqus_shortname = null;
+  w.kampot.disqus_shortname = 'peekingduck';
 
   w.kampot.analytics = w.kampot.analytics || {};
   w.kampot.analytics.ga_tracking_id = null;
