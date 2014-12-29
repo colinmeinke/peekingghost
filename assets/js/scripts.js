@@ -11,7 +11,7 @@
   w.kampot.disqus_shortname = 'peekingduck';
 
   w.kampot.analytics = w.kampot.analytics || {};
-  w.kampot.analytics.ga_tracking_id = null;
+  w.kampot.analytics.ga_tracking_id = 'UA-58016079-1';
 }( window ));
 
 // Add scrolled class to body
