@@ -8,10 +8,10 @@
   w.kampot.env = ( w.location.hostname === 'localhost' ) ?
     'development' : 'production';
 
-  w.kampot.disqus_shortname = 'peekingduck';
+  w.kampot.disqus_shortname = null;
 
   w.kampot.analytics = w.kampot.analytics || {};
-  w.kampot.analytics.ga_tracking_id = 'UA-58016079-1';
+  w.kampot.analytics.ga_tracking_id = null;
 }( window ));
 
 // Add scrolled class to body
@@ -23,10 +23,10 @@
   var body = d.querySelectorAll( 'body' )[ 0 ];
 
   w.addEventListener( 'scroll', function () {
-    if ( ( !scrolled ) && ( w.pageYOffset > 0 ) ) {
+    if (( !scrolled ) && ( w.pageYOffset > 124 )) {
       scrolled = true;
       body.classList.add( 'scrolled' );
-    } else if ( ( scrolled ) && ( w.pageYOffset === 0 ) ) {
+    } else if (( scrolled ) && ( w.pageYOffset < 124 )) {
       scrolled = false;
       body.classList.remove( 'scrolled' );
     }
@@ -63,7 +63,7 @@
     (function ( i, s, o, g, r, a, m ) {
       i.GoogleAnalyticsObject = r;
       i[ r ] = i[ r ] || function () {
-        ( i[ r ].q = i[ r ].q || [] ).push( arguments );
+        ( i[ r ].q = i[ r ].q || []).push( arguments );
       };
       i[ r ].l = 1 * new Date();
       a = s.createElement( o );

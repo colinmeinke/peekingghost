@@ -85,7 +85,6 @@ hr {
   border-bottom: 0.294rem solid hsla( 155, 20%, 95%, 1 );
   padding: 0.588rem 1.176rem;
   background-color: hsla( 155, 15%, 99%, 1 );
-  transition: all 0.3s ease;
 }
 
 .header__branding,
@@ -107,13 +106,12 @@ hr {
   height: 2.353rem;
   border-radius: 1.177rem;
   display: block;
-  border: 0.059rem solid hsla( 155, 35%, 60%, 1 );
-  transition: all 0.3s ease;
+  border: 0.059rem solid hsla( 155, 15%, 60%, 1 );
 }
 
 .header__branding:hover .header__branding__logo,
 .header__branding:focus .header__branding__logo {
-  border-color: hsla( 155, 45%, 45%, 1 );
+  border-color: hsla( 155, 25%, 45%, 1 );
 }
 
 .header__branding__title {
@@ -130,14 +128,12 @@ hr {
 .header__nav {
   height: 2.353rem;
   float: right;
-  transition: height 0.3s ease;
 }
 
 .header__nav-list {
   height: 1.5rem;
   margin-top: 0.427rem;
   display: block;
-  transition: margin-top 0.3s ease;
 }
 
 .header__nav-list:after {
@@ -392,6 +388,10 @@ hr {
   .header {
     padding-right: 2.353rem;
     padding-left: 2.353rem;
+  }
+
+  .scrolled {
+    padding-top: 7.764rem;
   }
 
   body:not(.scrolled) .header {
