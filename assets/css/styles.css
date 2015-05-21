@@ -111,7 +111,7 @@ hr {
 
 .header__branding:hover .header__branding__logo,
 .header__branding:focus .header__branding__logo {
-  border-color: hsla( 155, 25%, 45%, 1 );
+  border-color: hsla( 155, 45%, 45%, 1 );
 }
 
 .header__branding__title {
