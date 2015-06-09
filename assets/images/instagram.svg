@@ -1,6 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg"
      viewBox="0 0 26 26"
-     class="icon icon--instagram">
+     class="icon icon--instagram"
+     fill="hsla( 155, 50%, 62%, 1 )">
   <title>Instagram icon</title>
 
   <path d="M 4,1 L 22,1 C 24,1 25,2, 25,4 L 25,22

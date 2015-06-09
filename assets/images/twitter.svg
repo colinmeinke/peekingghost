@@ -1,6 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg"
      viewBox="0 0 26 26"
-     class="icon icon--twitter">
+     class="icon icon--twitter"
+     fill="hsla( 155, 50%, 62%, 1 )">
   <title>Twitter icon</title>
   
   <path d="M 23.1909886,5.29558086

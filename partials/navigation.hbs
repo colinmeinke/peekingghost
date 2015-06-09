@@ -1,0 +1,18 @@
+<div class="header__nav">
+  <nav role="navigation"
+       class="header__nav-list">
+    {{#foreach navigation}}
+      <a href="{{url}}"
+         class="header__nav-list__item
+                header__nav-list__item--{{slug}}
+                {{#if current}}
+                  header__nav-list__item--selected
+                {{/if}}">
+        <i class="header__nav-list__item__icon"></i>
+        <span class="header__nav-list__item__title">
+          {{label}}
+        </span>
+      </a>
+    {{/foreach}}
+  </nav>
+</div>

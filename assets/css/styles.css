@@ -153,30 +153,45 @@ hr {
   margin-left: 0.588rem;
 }
 
+.header__nav-list__item:not(.header__nav-list__item--twitter):not(.header__nav-list__item--instagram):not(.header__nav-list__item--pinterest) .header__nav-list__item__icon {
+  display: none;
+}
+
 .header__nav-list__item__icon {
   width: 1.5rem;
   height: 1.5rem;
   float: left;
 }
 
-.header__nav-list__item__icon .icon {
-  fill: hsla( 155, 50%, 62%, 1 );
+.header__nav-list__item:hover .header__nav-list__item__icon,
+.header__nav-list__item:focus .header__nav-list__item__icon {
+  -webkit-filter: saturate(150%);
+  filter: saturate(150%);
 }
 
-.header__nav-list__item:hover .header__nav-list__item__icon .icon,
-.header__nav-list__item:focus .header__nav-list__item__icon .icon {
-  fill: hsla( 210, 70%, 60%, 1 );
+.header__nav-list__item--twitter .header__nav-list__item__icon {
+  background: url(../images/twitter.svg);
+}
+ 
+.header__nav-list__item--instagram .header__nav-list__item__icon {
+  background: url(../images/instagram.svg);
+}
+ 
+.header__nav-list__item--pinterest .header__nav-list__item__icon {
+  background: url(../images/pinterest.svg);
 }
 
-.header__nav-list__item__icon + .header__nav-list__item__title:not(.header__nav-list__item__title--hidden) {
-  padding-left: 0.294rem;
-}
-
-.header__nav-list__item__title--hidden {
+.header__nav-list__item--twitter .header__nav-list__item__title,
+.header__nav-list__item--instagram .header__nav-list__item__title,
+.header__nav-list__item--pinterest .header__nav-list__item__title {
   width: 0.059rem;
   display: block;
   text-indent: 100%;
   overflow: hidden;
+}
+ 
+.header__nav-list__item__icon + .header__nav-list__item__title:not(.header__nav-list__item__title--hidden) {
+  padding-left: 0.294rem;
 }
 
 .post,
