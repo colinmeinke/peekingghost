@@ -14,6 +14,18 @@
   w.kampot.analytics.ga_tracking_id = 'UA-58016079-1';
 }( window ));
 
+// Add fonts-loaded class to html when
+// Antic Slab has completed loading
+(function ( d, w ) {
+  'use strict';
+
+  new w.FontFaceObserver( 'Antic Slab' )
+    .check()
+    .then(function () {
+        d.documentElement.className += ' fonts-loaded';
+    });
+}( document, window ));
+
 // Add scrolled class to body
 // when not at top of page
 (function ( d, w ) {

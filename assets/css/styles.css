@@ -1,8 +1,19 @@
+@font-face {
+    font-family: "Antic Slab";
+    src: url(/assets/fonts/antic-slab-regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
 html {
   color: hsla( 155, 15%, 27%, 1 );
-  font-family: "Antic Slab", Serif;
+  font-family: "Droid Serif", "Times", "Times New Roman", serif;
   font-size: 106.25%;
   line-height: 1.5;
+}
+
+.fonts-loaded {
+  font-family: "Antic Slab", "Droid Serif", "Times", "Times New Roman", serif;
 }
 
 body,
@@ -170,15 +181,15 @@ hr {
 }
 
 .header__nav-list__item--twitter .header__nav-list__item__icon {
-  background: url(../images/twitter.svg);
+  background: url(/assets/images/twitter.svg);
 }
- 
+
 .header__nav-list__item--instagram .header__nav-list__item__icon {
-  background: url(../images/instagram.svg);
+  background: url(/assets/images/instagram.svg);
 }
- 
+
 .header__nav-list__item--pinterest .header__nav-list__item__icon {
-  background: url(../images/pinterest.svg);
+  background: url(/assets/images/pinterest.svg);
 }
 
 .header__nav-list__item--twitter .header__nav-list__item__title,
@@ -189,7 +200,7 @@ hr {
   text-indent: 100%;
   overflow: hidden;
 }
- 
+
 .header__nav-list__item__icon + .header__nav-list__item__title:not(.header__nav-list__item__title--hidden) {
   padding-left: 0.294rem;
 }
