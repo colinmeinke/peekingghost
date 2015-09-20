@@ -37,8 +37,8 @@ gulp.task( 'concatJS', [ 'minifyJS' ], function () {
 });
 
 gulp.task('watch', function() {
-  gulp.watch( './assets/css/*.css', [ 'minifyCSS', 'inlineCSS' ]);
-  gulp.watch( './assets/js/*.js', [ 'minifyJS', 'concatJS' ]);
+  gulp.watch( './assets/css/*.css', [ 'inlineCSS' ]);
+  gulp.watch( './assets/js/*.js', [ 'concatJS' ]);
 });
 
-gulp.task( 'default', [ 'minifyCSS', 'inlineCSS', 'minifyJS', 'concatJS' ]);
+gulp.task( 'default', [ 'inlineCSS', 'concatJS' ]);

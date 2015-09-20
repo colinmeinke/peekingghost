@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8" />
 
@@ -7,11 +7,11 @@
           content="IE=edge" />
 
     <title>
-      {{meta_title}}
+      {{ meta_title }}
     </title>
 
     <meta name="description"
-          content="{{meta_description}}" />
+          content="{{ meta_description }}" />
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0" />
@@ -20,7 +20,7 @@
       {{> styles}}
     </style>
 
-    {{ghost_head}}
+    {{ ghost_head }}
   </head>
 
   <body itemscope
@@ -28,10 +28,10 @@
 
     <header class="header">
 
-      <a href="{{@blog.url}}"
+      <a href="{{ @blog.url }}"
          class="header__branding">
-        {{#if @blog.logo}}
-        <img src="{{@blog.logo}}"
+        {{#if @blog.logo }}
+        <img src="{{ @blog.logo }}"
              class="header__branding__logo"
              width="120"
              height="120" />
@@ -39,21 +39,22 @@
 
         <h1 class="header__branding__title"
             itemprop="name">
-          {{@blog.title}}
+          {{ @blog.title }}
         </h1>
       </a>
 
-      {{navigation}}
+      {{ navigation }}
 
     </header>
 
-    {{{body}}}
+    {{{ body }}}
 
-    {{> footer}}
+    {{> footer }}
 
-    <script src="{{asset "js/scripts.min.js"}}"
-            defer="defer">
+    <script src="{{ asset "js/scripts.min.js" }}">
     </script>
+
+    {{ ghost_foot }}
 
   </body>
 </html>
